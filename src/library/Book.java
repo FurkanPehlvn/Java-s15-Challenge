@@ -116,8 +116,10 @@ public class Book {
         return Objects.hashCode(this.book_ID);
     }
 
+    @Override
     public String toString() {
-        long var10000 = this.book_ID;
-        return "Book{book_ID=" + var10000 + ", author='" + this.author + "', name='" + this.name + "', price=" + this.price + ", status=" + this.status + ", edition=" + String.valueOf(this.edition) + ", dateOfPurchase=" + String.valueOf(this.dateOfPurchase) + ", borrowedBy=" + String.valueOf(this.borrowedBy) + "}";
+        return "Book{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

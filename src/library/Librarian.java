@@ -11,7 +11,7 @@ import java.util.List;
 public class Librarian {
     private String name;
     private String password;
-
+    private Library library;
     public Librarian(String name, String password) {
         this.name = name;
         this.password = password;
@@ -115,6 +115,7 @@ public class Librarian {
         }
 
     }
+
 
     public String toString() {
         return "Librarian{name='" + this.name + "', password='" + this.password + "'}";

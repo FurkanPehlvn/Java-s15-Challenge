@@ -60,7 +60,11 @@ public class Reader extends Person {
         return super.getName();
     }
 
+    @Override
     public String toString() {
-        return "Reader{borrowedBooks=" + String.valueOf(this.borrowedBooks) + "}";
+        return "Reader{"+ super.getName()+" " +
+                "borrowedBooks=" + borrowedBooks +
+
+                '}';
     }
 }
