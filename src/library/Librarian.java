@@ -40,7 +40,8 @@ public class Librarian {
                         }
 
                         book = (Book)var4.next();
-                        System.out.println(book);
+                        System.out.println(book+" "+"Book Id:"+ book.getBook_ID());
+
                     } while(book.isStatus());
 
                     Iterator var6 = library.getReaders().iterator();

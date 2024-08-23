@@ -72,7 +72,7 @@ public class Main {
                                 System.out.println("3. Issue Book");
                                 System.out.println("4. Return Book");
                                 System.out.println("5. Calculate Fine");
-                                System.out.println("6.List of readers");
+                                System.out.println("6. List of readers");
                                 System.out.println("7. Exit Librarian Operations");
                                 System.out.print("Choose an option: ");
                                 int librarianChoice = scanner.nextInt();
@@ -163,6 +163,8 @@ public class Main {
                         break;
                     case 4:
                         System.out.println("All books in library");
+                        System.out.println(library.getBooks());
+                        break;
                     case 5:
                         System.out.print("Enter Reader Name: ");
                         String readerName = scanner.nextLine();
